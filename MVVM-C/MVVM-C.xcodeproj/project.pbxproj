@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E001D7C29DD170000DAB878 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E001D7B29DD170000DAB878 /* LoginViewController.swift */; };
+		1E001D7E29DD176C00DAB878 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E001D7D29DD176C00DAB878 /* LoginCoordinator.swift */; };
+		1E001D8029DD190000DAB878 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E001D7F29DD190000DAB878 /* MainCoordinator.swift */; };
 		1E1B9BE529DC4E8700D9528C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B9BE429DC4E8700D9528C /* AppDelegate.swift */; };
 		1E1B9BE729DC4E8700D9528C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B9BE629DC4E8700D9528C /* SceneDelegate.swift */; };
-		1E1B9BE929DC4E8700D9528C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B9BE829DC4E8700D9528C /* ViewController.swift */; };
+		1E1B9BE929DC4E8700D9528C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B9BE829DC4E8700D9528C /* MainViewController.swift */; };
 		1E1B9BEE29DC4E8900D9528C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1B9BED29DC4E8900D9528C /* Assets.xcassets */; };
 		1E1B9BF129DC4E8900D9528C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1B9BEF29DC4E8900D9528C /* LaunchScreen.storyboard */; };
-		1E1B9C2329DC54DF00D9528C /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B9C2229DC54DF00D9528C /* Cancellable.swift */; };
+		1ED449CB29DCEBF60004348B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED449CA29DCEBF60004348B /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E001D7B29DD170000DAB878 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1E001D7D29DD176C00DAB878 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		1E001D7F29DD190000DAB878 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		1E1B9BE129DC4E8700D9528C /* MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E1B9BE429DC4E8700D9528C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E1B9BE629DC4E8700D9528C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E1B9BE829DC4E8700D9528C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E1B9BE829DC4E8700D9528C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1E1B9BED29DC4E8900D9528C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E1B9BF029DC4E8900D9528C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E1B9BF229DC4E8900D9528C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E1B9C2229DC54DF00D9528C /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		1ED449CA29DCEBF60004348B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E001D7929DD16A200DAB878 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1E001D7F29DD190000DAB878 /* MainCoordinator.swift */,
+				1E1B9BE829DC4E8700D9528C /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1E001D7A29DD16AA00DAB878 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1E001D7D29DD176C00DAB878 /* LoginCoordinator.swift */,
+				1E001D7B29DD170000DAB878 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		1E1B9BD829DC4E8700D9528C = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +82,6 @@
 			children = (
 				1E1B9C1529DC52B000D9528C /* Application */,
 				1E1B9C1629DC52C900D9528C /* Presentation */,
-				1E1B9C1729DC535E00D9528C /* Domain */,
-				1E1B9C1B29DC53BD00D9528C /* Data */,
-				1E1B9C1F29DC53EB00D9528C /* Infrastructure */,
-				1E1B9C2129DC54C500D9528C /* Common */,
 				1E1B9C1429DC524600D9528C /* Resources */,
 			);
 			path = "MVVM-C";
@@ -82,6 +102,7 @@
 			children = (
 				1E1B9BE429DC4E8700D9528C /* AppDelegate.swift */,
 				1E1B9BE629DC4E8700D9528C /* SceneDelegate.swift */,
+				1ED449CA29DCEBF60004348B /* AppCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -89,94 +110,10 @@
 		1E1B9C1629DC52C900D9528C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				1E1B9BE829DC4E8700D9528C /* ViewController.swift */,
+				1E001D7929DD16A200DAB878 /* Main */,
+				1E001D7A29DD16AA00DAB878 /* Login */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		1E1B9C1729DC535E00D9528C /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				1E1B9C1A29DC537F00D9528C /* Entities */,
-				1E1B9C1929DC537900D9528C /* UseCases */,
-				1E1B9C1829DC536F00D9528C /* Interfaces */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		1E1B9C1829DC536F00D9528C /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interfaces;
-			sourceTree = "<group>";
-		};
-		1E1B9C1929DC537900D9528C /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		1E1B9C1A29DC537F00D9528C /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		1E1B9C1B29DC53BD00D9528C /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				1E1B9C1E29DC53DB00D9528C /* Network */,
-				1E1B9C1D29DC53D300D9528C /* Repositories */,
-				1E1B9C1C29DC53C800D9528C /* PersistentStorages */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		1E1B9C1C29DC53C800D9528C /* PersistentStorages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PersistentStorages;
-			sourceTree = "<group>";
-		};
-		1E1B9C1D29DC53D300D9528C /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		1E1B9C1E29DC53DB00D9528C /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		1E1B9C1F29DC53EB00D9528C /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-				1E1B9C2029DC53FB00D9528C /* Network */,
-			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		1E1B9C2029DC53FB00D9528C /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		1E1B9C2129DC54C500D9528C /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				1E1B9C2229DC54DF00D9528C /* Cancellable.swift */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E1B9BE929DC4E8700D9528C /* ViewController.swift in Sources */,
+				1E001D7E29DD176C00DAB878 /* LoginCoordinator.swift in Sources */,
+				1E001D8029DD190000DAB878 /* MainCoordinator.swift in Sources */,
+				1ED449CB29DCEBF60004348B /* AppCoordinator.swift in Sources */,
+				1E1B9BE929DC4E8700D9528C /* MainViewController.swift in Sources */,
 				1E1B9BE529DC4E8700D9528C /* AppDelegate.swift in Sources */,
-				1E1B9C2329DC54DF00D9528C /* Cancellable.swift in Sources */,
+				1E001D7C29DD170000DAB878 /* LoginViewController.swift in Sources */,
 				1E1B9BE729DC4E8700D9528C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
